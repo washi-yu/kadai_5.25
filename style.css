@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 20px;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  
+}
+
+#box-red {
+  background-color: red;
+  color:white;
+}
+
+#box-bule {
+  background-color: blue;
+  color: black;
+}
+
+#box-pink {
+  background-color: pink;
+  color: brown;
+}
+
+@media screen and (max-width:1024px){
+  .box {
+    width: 200px;
+    height: 200px;
+    
+  }
+  
+}
+
+@media screen and (max-width:768px){
+  body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  #box-red {
+    order: 3;
+  }
+
+  #box-bule {
+    order: 1;
+  }
+
+  #box-pink {
+    order: 2;
+  }
+
+}
